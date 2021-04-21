@@ -34,7 +34,4 @@ public abstract class Noticias implements Serializable {
     @JoinColumn(name = "writer_id")
     private Writer escritorDueño;
 
-    public void setEscritorDueño(Writer escritorDueño) {
-        this.escritorDueño = escritorDueño;
-    }
 }

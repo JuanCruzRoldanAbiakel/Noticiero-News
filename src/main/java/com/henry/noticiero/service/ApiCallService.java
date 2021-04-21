@@ -70,7 +70,7 @@ public class ApiCallService {
 
  private OpenWeatherResponse fallback2(final Throwable throwable){
   log.error(throwable.getStackTrace().toString());
-  Main main = new Main(0d,0d,0d,0d,0,0);
+  Main main = new Main(0d,0d,0d,0d, (double) 0,0);
   return OpenWeatherResponse
           .builder()
           .main(main)

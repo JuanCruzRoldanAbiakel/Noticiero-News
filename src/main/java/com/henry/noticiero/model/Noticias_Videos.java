@@ -10,11 +10,12 @@ import javax.persistence.Entity;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @Entity(name = "VideosNoticias")
-public class Noticias_Videos {
+public class Noticias_Videos extends Noticias {
     private String tituloVideo;
     private String descripcionVideo;
     private String urlVideos;
 
+    @Override
     public NoticiasEnum noticiasEnum(){
         return NoticiasEnum.VIDEO;
     }

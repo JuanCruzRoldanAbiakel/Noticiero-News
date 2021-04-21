@@ -14,10 +14,4 @@ public class ApiError {
     private String message;
     private List<String> errors;
 
-    public ApiError(HttpStatus badRequest, String localizedMessage, List<String> errors) {
-    }
-
-    public HttpStatus getStatus() {
-    return status;
-    }
 }
